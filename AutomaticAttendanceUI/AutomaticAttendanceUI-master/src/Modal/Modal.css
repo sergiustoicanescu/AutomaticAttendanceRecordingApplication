@@ -1,0 +1,123 @@
+.modal-title {
+    font-size: 25px;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    width: 30%;
+    font-size: 18px;
+}
+
+.modal-content,
+.modal-form {
+    position: relative;
+}
+
+.modal-form .modal-body {
+    margin: 20px 0;
+}
+
+.modal-form .modal-actions {
+    text-align: right;
+}
+
+.modal-form .modal-cancel-button,
+.modal-form .modal-confirm-button {
+    display: inline;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    text-align: left;
+    cursor: pointer;
+    color: rgb(44, 132, 255);
+    margin-left: 10px;
+    transition: background-color 0.2s;
+}
+
+.modal-form .modal-cancel-button {
+    color: black;
+}
+
+.modal-form .modal-cancel-button:hover,
+.modal-form .modal-confirm-button:hover {
+    background-color: #dfdfdf;
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+.modal-form .modal-cancel-button:active,
+.modal-form .modal-confirm-button:active {
+    background-color: #b1b1b1;
+}
+
+.modal-form .modal-body input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.modal-form .modal-body input:focus {
+    border-color: #505050;
+    outline: none;
+}
+
+.modal-form .modal-body label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.modal-form .modal-body p {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #333;
+}
+
+.modal-form .modal-cancel-button:disabled,
+.modal-form .modal-confirm-button:disabled {
+    color: #aaa;
+    cursor: not-allowed;
+    background-color: #f5f5f5;
+}
+
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        font-size: 13px;
+    }
+
+    .modal-body label {
+        font-size: 13px;
+    }
+
+    .modal-body p {
+        font-size: 15px;
+    }
+
+    .modal-title {
+        font-size: 20px;
+    }
+}

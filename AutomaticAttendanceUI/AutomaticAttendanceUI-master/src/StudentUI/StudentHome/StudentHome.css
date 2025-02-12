@@ -1,0 +1,97 @@
+.student-home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    text-align: center;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.message-container p {
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.attendance-page-button {
+    padding: 8px 10px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.attendance-page-button:active {
+    background-color: #606060;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.message-container.right {
+    animation: slideInRight 0.5s forwards;
+}
+
+.message-container.left {
+    animation: slideInLeft 0.5s forwards;
+}

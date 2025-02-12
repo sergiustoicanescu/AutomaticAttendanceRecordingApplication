@@ -1,0 +1,27 @@
+.success-message {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 30px;
+    animation: pulse 2s infinite;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.7);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 20px 20px rgba(76, 175, 80, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+    }
+}

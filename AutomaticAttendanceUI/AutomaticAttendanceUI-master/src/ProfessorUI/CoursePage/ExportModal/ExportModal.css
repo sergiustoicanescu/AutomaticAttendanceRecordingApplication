@@ -1,0 +1,45 @@
+.course-export-container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.course-export-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #2868a7;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.course-export-text {
+    margin-bottom: 10px;
+}
+
+.course-export-button:hover {
+    background-color: #2e7ac2;
+}
+
+.course-export-button:active {
+    transform: scale(1.05);
+    transition: transform 0.1s;
+}
+
+@media (max-width: 1200px) {
+    .course-export-container {
+        width: 200px;
+    }
+}

@@ -1,0 +1,31 @@
+.message-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    height: 80vh;
+    box-sizing: border-box;
+}
+
+.error-container p {
+    margin-bottom: 20px;
+}
+
+.back-to-dashboard {
+    margin-top: 10px;
+    padding: 8px 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.back-to-dashboard:active {
+    background-color: #606060;
+}

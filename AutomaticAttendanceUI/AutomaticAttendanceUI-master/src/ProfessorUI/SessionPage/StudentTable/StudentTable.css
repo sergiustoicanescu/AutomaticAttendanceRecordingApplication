@@ -1,0 +1,29 @@
+.data-grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 0px 30px 30px 30px;
+}
+
+.columnHeaders {
+    background-color: #7aaee2;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.status-present .MuiDataGrid-cell {
+    background-color: #b4f2c7;
+}
+
+.status-absent .MuiDataGrid-cell {
+    background-color: #fec9d1;
+}
+
+.status-authorised-absent .MuiDataGrid-cell {
+    background-color: #f8f2b0;
+}
+
+.MuiDataGrid-cell {
+    background-color: white;
+}

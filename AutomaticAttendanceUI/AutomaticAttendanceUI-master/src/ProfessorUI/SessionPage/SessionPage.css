@@ -1,0 +1,67 @@
+.session-info {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: inline;
+}
+
+.session-info.show {
+    opacity: 1;
+}
+
+.bulk-action-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    margin-left: 30px;
+}
+
+.bulk-action-text {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.bulk-action-button-absent,
+.bulk-action-button-present {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    margin-right: 5px;
+}
+
+.bulk-action-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.bulk-action-button:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bulk-action-button-absent {
+    color: #dc3545;
+}
+
+.bulk-action-button-absent:hover {
+    background-color: #f8d7da;
+}
+
+.bulk-action-button-absent:active {
+    background-color: #f5a9b1;
+}
+
+.bulk-action-button-present {
+    color: #35dc4e;
+}
+
+.bulk-action-button-present:hover {
+    background-color: #d7f8d8;
+}
+
+.bulk-action-button-present:active {
+    background-color: #c1e9c3;
+}

@@ -1,0 +1,39 @@
+.comment-cell {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.comment-cell textarea {
+    flex-grow: 1;
+    margin-top: 3px;
+    height: fit-content;
+    padding: 3px;
+    border: 1px solid #b8b8b8;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    resize: none;
+    transition: border-color 0.2s;
+}
+
+.comment-cell textarea:focus {
+    border-color: #505050;
+    outline: none;
+}
+
+.comment-cell button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.comment-cell button:hover {
+    background-color: #0056b3;
+}

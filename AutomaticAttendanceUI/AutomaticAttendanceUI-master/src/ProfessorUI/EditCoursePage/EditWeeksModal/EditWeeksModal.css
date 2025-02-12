@@ -1,0 +1,35 @@
+.weeks-list {
+    position: relative;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 0;
+    margin: 0;
+    min-width: fit-content;
+    font-size: 15px;
+}
+
+.edit-weeks-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 8px 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border: 1px solid #bcbcbc;
+}
+
+.edit-weeks-details.changed-week {
+    border: 1px solid blue;
+}
+
+.edit-weeks-details button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

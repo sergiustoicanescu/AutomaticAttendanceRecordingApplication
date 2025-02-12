@@ -1,0 +1,49 @@
+.error-tooltip {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    z-index: 10;
+    white-space: nowrap;
+}
+
+.error-tooltip.top {
+    bottom: 100%;
+    margin-bottom: 10px;
+}
+
+.error-tooltip.bottom {
+    top: 100%;
+    margin-top: 10px;
+}
+
+.error-tooltip.top::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #f44336 transparent transparent transparent;
+}
+
+.error-tooltip.bottom::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #f44336 transparent;
+}
+
+@media (max-width: 768px) {
+    .error-tooltip {
+        white-space: normal;
+    }
+}
