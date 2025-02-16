@@ -27,11 +27,11 @@ The application was tested at my university for 5 weeks, during which 162 people
 
 ### 👩‍🏫 Professor
 
-![Professor View](screenshots/Professor.gif)
+![Professor View](screenshots/ProfessorNew.gif)
 
 ### 🎓 Student
 
-![Student View](screenshots/Student.gif)
+![Student View](screenshots/StudentNew.gif)
 
 
 ## 🛠️ Tech Stack
