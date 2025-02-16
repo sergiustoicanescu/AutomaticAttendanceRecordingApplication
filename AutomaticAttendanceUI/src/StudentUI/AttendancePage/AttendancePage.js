@@ -53,7 +53,7 @@ const AttendancePage = ({ user }) => {
             setCourse(data.course)
             setSession(data.session)
             setDate(format(new Date(data.session.startDate), "EEEE dd MMM yyyy"))
-            if (!data.course.location.lat && !data.course.location.lng) {
+            if (!data.course.location) {
                 setIsLocationDisabled(true);
             }
             setIsLoading(false);
